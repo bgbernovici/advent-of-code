@@ -78,7 +78,7 @@ func Execute() {
 			if !possible {
 				break
 			}
-			if !isSetSmallerOrEqualThanExpectated(set, expected) {
+			if !isSetSmallerOrEqualThanExpected(set, expected) {
 				possible = false
 			}
 		}
@@ -135,6 +135,6 @@ func generateSet(game *Game, match string) {
 	game.sets = append(game.sets, set)
 }
 
-func isSetSmallerOrEqualThanExpectated(set Set, expected Expectation) bool {
+func isSetSmallerOrEqualThanExpected(set Set, expected Expectation) bool {
 	return set.r <= expected.r && set.b <= expected.b && set.g <= expected.g
 }
