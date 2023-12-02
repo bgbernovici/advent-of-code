@@ -13,6 +13,8 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/bgbernovici/advent-of-code/common"
 )
 
 func Execute() {
@@ -24,10 +26,10 @@ func Execute() {
 	sum := solve(file, false)
 	println("Part 1: ", sum)
 
-	file, err = os.Open("../Inputs/2023/Day1_.txt")
-	sum = solve(file, true)
+	file_re, err := os.Open("../Inputs/2023/Day1_.txt")
+	defer file_re.Close()
+	sum = solve(file_re, true)
 	println("Part 2: ", sum)
-
 }
 
 func solve(file *os.File, needsRecalibration bool) int {
@@ -73,13 +75,6 @@ var domain = map[string]int{
 	"nine":  9,
 }
 
-func minInt(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
 func recalibrate(line string) string {
 	var newLine = ""
 	for k, v := range domain {
@@ -87,7 +82,7 @@ func recalibrate(line string) string {
 	}
 	for i := 0; i < len(line); i++ {
 		for k, v := range domain {
-			if strings.Index(line[i:minInt(i+len(k), len(line))], k) != -1 {
+			if strings.Index(line[i:common.MinInt(i+len(k), len(line))], k) != -1 {
 				newLine += fmt.Sprint(v)
 				break
 			}
