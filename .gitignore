@@ -11,3 +11,4 @@
 /Rust/target
 /Rust/Cargo.lock
 /Rust/debug
+.vscode
