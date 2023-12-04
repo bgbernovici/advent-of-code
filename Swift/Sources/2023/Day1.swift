@@ -26,7 +26,7 @@ struct SumGenerator {
 @main
 struct Day1 {
     
-    public static func main() -> Void {
+    public static func main() {
         let inputURL = URL(fileURLWithPath: "Sources/../../Inputs/2023/Day1_.txt")
         print("Part 1: ", sumCalibrations(inputURL, false))
         print("Part 2: ", sumCalibrations(inputURL, true))

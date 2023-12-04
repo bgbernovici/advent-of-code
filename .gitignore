@@ -8,3 +8,6 @@
 /Swift/.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 /Swift/.netrc
 /Swift/.vscode
+/Rust/target
+/Rust/Cargo.lock
+/Rust/debug

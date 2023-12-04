@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:advent-of-code}\\Swift",
+            "name": "Debug 2023 (Swift)",
+            "program": "${workspaceFolder:advent-of-code}\\Swift\\.build\\debug\\2023.exe",
+            "preLaunchTask": "swift: Build Debug 2023 (Swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:advent-of-code}\\Swift",
+            "name": "Release 2023 (Swift)",
+            "program": "${workspaceFolder:advent-of-code}\\Swift\\.build\\release\\2023.exe",
+            "preLaunchTask": "swift: Build Release 2023 (Swift)"
+        }
+    ]
+}
