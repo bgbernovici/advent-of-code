@@ -19,6 +19,7 @@ type Almanac struct {
 	seeds    []int
 	mappings []Domain
 }
+
 type Range struct {
 	destStart int
 	srcStart  int
