@@ -201,7 +201,7 @@ func Execute() {
 	}
 	fmt.Println("Part 2: ", sum)
 	elapsed := time.Since(start)
-	fmt.Println("Part 2 execution took ", elapsed)
+	fmt.Println("Total execution took ", elapsed)
 }
 
 func inplaceSortSlice(hands *[]Hand) {
