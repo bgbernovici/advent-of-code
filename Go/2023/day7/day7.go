@@ -13,6 +13,7 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+	"time"
 )
 
 var cardRanks = map[rune]int{
@@ -122,6 +123,7 @@ func countOccurrences(cards []rune) map[rune]int {
 }
 
 func Execute() {
+	start := time.Now()
 	file, err := os.Open("../Inputs/2023/Day7_.txt")
 	if err != nil {
 		fmt.Println("Error opening input file: ", err)
@@ -198,6 +200,8 @@ func Execute() {
 		sum += hand.bid * (i + 1)
 	}
 	fmt.Println("Part 2: ", sum)
+	elapsed := time.Since(start)
+	fmt.Println("Part 2 execution took ", elapsed)
 }
 
 func inplaceSortSlice(hands *[]Hand) {
