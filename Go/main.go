@@ -12,6 +12,7 @@ import (
 	"github.com/bgbernovici/advent-of-code/2023/day6"
 	"github.com/bgbernovici/advent-of-code/2023/day7"
 	"github.com/bgbernovici/advent-of-code/2023/day8"
+	"github.com/bgbernovici/advent-of-code/2023/day9"
 )
 
 func main() {
@@ -33,4 +34,6 @@ func main() {
 	day7.Execute()
 	fmt.Println("## DAY 8 ##")
 	day8.Execute()
+	fmt.Println("## DAY 9 ##")
+	day9.Execute()
 }
