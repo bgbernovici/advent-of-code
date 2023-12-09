@@ -17,7 +17,7 @@ import (
 type History struct {
 	values               []int64
 	placeholder          int64
-	backwardsPalceholder int64
+	backwardsPlaceholder int64
 }
 
 func Execute() {
@@ -69,11 +69,11 @@ func Execute() {
 		for i := len(tempHistory) - 1; i >= 0; i-- {
 			if i == len(tempHistory)-1 {
 				tempHistory[i].placeholder = 0
-				tempHistory[i].backwardsPalceholder = 0
+				tempHistory[i].backwardsPlaceholder = 0
 				continue
 			}
 			tempHistory[i].placeholder = tempHistory[i+1].placeholder + tempHistory[i].values[len(tempHistory[i].values)-1]
-			tempHistory[i].backwardsPalceholder = tempHistory[i].values[0] - tempHistory[i+1].backwardsPalceholder
+			tempHistory[i].backwardsPlaceholder = tempHistory[i].values[0] - tempHistory[i+1].backwardsPalceholder
 		}
 
 		histories[k] = tempHistory[0]
@@ -87,7 +87,7 @@ func Execute() {
 
 	sum = int64(0)
 	for _, history := range histories {
-		sum += history.backwardsPalceholder
+		sum += history.backwardsPlaceholder
 	}
 	fmt.Println("Part 2: ", sum)
 	elapsed := time.Since(start)
