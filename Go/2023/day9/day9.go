@@ -73,7 +73,7 @@ func Execute() {
 				continue
 			}
 			tempHistory[i].placeholder = tempHistory[i+1].placeholder + tempHistory[i].values[len(tempHistory[i].values)-1]
-			tempHistory[i].backwardsPlaceholder = tempHistory[i].values[0] - tempHistory[i+1].backwardsPalceholder
+			tempHistory[i].backwardsPlaceholder = tempHistory[i].values[0] - tempHistory[i+1].backwardsPlaceholder
 		}
 
 		histories[k] = tempHistory[0]
