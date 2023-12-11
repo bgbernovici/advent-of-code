@@ -97,7 +97,7 @@ func Execute() {
 		d = 0
 	}
 
-	dist := max(math.Ceil(float64(a)/2), math.Ceil(float64(b)/2), math.Max(math.Ceil(float64(c)/2), math.Ceil(float64(d)/2)))
+	dist := max(math.Ceil(float64(a)/2), math.Ceil(float64(b)/2), math.Ceil(float64(c)/2), math.Ceil(float64(d)/2))
 	fmt.Println("Part 1: ", dist)
 
 	insideSum := 0
