@@ -5,6 +5,8 @@ import (
 
 	"github.com/bgbernovici/advent-of-code/2023/day1"
 	"github.com/bgbernovici/advent-of-code/2023/day10"
+	"github.com/bgbernovici/advent-of-code/2023/day11_dijkstra"
+	"github.com/bgbernovici/advent-of-code/2023/day11_manhattan"
 	"github.com/bgbernovici/advent-of-code/2023/day2"
 	"github.com/bgbernovici/advent-of-code/2023/day3"
 	"github.com/bgbernovici/advent-of-code/2023/day4"
@@ -39,4 +41,8 @@ func main() {
 	day9.Execute()
 	fmt.Println("## DAY 10 ##")
 	day10.Execute()
+	fmt.Println("## DAY 11 DIJKSTRA ##")
+	day11_dijkstra.Execute()
+	fmt.Println("## DAY 11 MANHATTAN ##")
+	day11_manhattan.Execute()
 }
