@@ -7,6 +7,8 @@ import (
 	"github.com/bgbernovici/advent-of-code/2023/day10"
 	"github.com/bgbernovici/advent-of-code/2023/day11_dijkstra"
 	"github.com/bgbernovici/advent-of-code/2023/day11_manhattan"
+	"github.com/bgbernovici/advent-of-code/2023/day12"
+	"github.com/bgbernovici/advent-of-code/2023/day12_uncacheable"
 	"github.com/bgbernovici/advent-of-code/2023/day2"
 	"github.com/bgbernovici/advent-of-code/2023/day3"
 	"github.com/bgbernovici/advent-of-code/2023/day4"
@@ -45,4 +47,8 @@ func main() {
 	day11_dijkstra.Execute()
 	fmt.Println("## DAY 11 MANHATTAN ##")
 	day11_manhattan.Execute()
+	fmt.Println("## DAY 12 ##")
+	day12.Execute()
+	fmt.Println("## DAY 12 UNCACHEABLE ##")
+	day12_uncacheable.Execute()
 }
